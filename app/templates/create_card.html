@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block my_block %}
-
+<div class="">
     <form method="POST">
         {{ form.hidden_tag() }}
 
@@ -29,10 +29,9 @@
         {{ form.sentence.label }}
         {{ form.sentence(size=32) }}
         <br>
-        <button class="btn btn-primary">
             {{ form.submit() }}
-        </button>
+      </form>
+</div>
 
-    </form>
 
 {% endblock %}

@@ -1,8 +1,7 @@
 from app import app, db
 from app.models import Card
 from app.forms import AddNewBusiness
-from flask import redirect, render_template
-
+from flask import redirect, render_template, url_for
 
 
 @app.route('/')
@@ -26,12 +25,10 @@ def create_card():
                         website=website, facebook=facebook, address=address, sentence=sentence)
         db.session.add(new_card)
         db.session.commit()
-        return redirect('/')
+        return render_template('card.html', card=new_card)
     return render_template('create_card.html', form=form)
 
-    # return redirect('/card')
 
-
-@app.route('/card')
+@app.route('/card', methods=['GET'])
 def card():
-    pass
+    return render_template('card.html')

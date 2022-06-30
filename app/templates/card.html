@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block my_block %}
+
+<h3> Here is your beautiful card: </h3>
+
+<div class="card">
+   <div id="left">
+        <h2>  {{ card.name }} </h2><br>
+        <hr class="hr">
+        <h2> {{ card.category }} </h2><br><br><br><br><br><br><br><br>
+        <h3> {{ card.sentence }} </h3>
+
+   <div id="right">
+      <i class="fa-solid fa-link fa-1x">&nbsp;&nbsp; <p> {{ card.website }} </p><br></i>
+        <p> {{ card.facebook }} </p><br>
+        <p> {{ card.address }} </p><br>
+        <p> {{ card.phone }} </p><br>
+       <p> {{ card.email }} </p>
+
+   </div>
+</div>
+
+{% endblock %}

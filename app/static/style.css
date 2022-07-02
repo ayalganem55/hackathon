@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    /* font-family: 'quicksand'; */
+    font-family: 'Arial';
 }
 
 /* nav bar*/
@@ -25,8 +25,6 @@ li {
     font-size: 35px;
 
 }
-
-
 .push {
     margin-left: auto;
 }
@@ -34,11 +32,9 @@ li {
 /* main cover */
 .cover {
     display: flex;
-    height: 81vh;
-    background-image: url("/coverH.jpg")
-    background-repeat: no-repeat;
+    height: 88vh;
     background-size: cover;
-    background-position: center;
+    background: url("../static/coverH.jpg") no-repeat center;
     margin: 0;
 }
 
@@ -50,10 +46,10 @@ li {
 
 h3 {
     text-align: center;
-    margin-top: 110px;
+    margin-top: 250px;
     padding: 20px;
     color:  rgb(11, 83, 107);    ;
-    font-size: 50px;
+    font-size: 61px;
     float: left;
     letter-spacing: 0.02em;
     font-weight: 560;
@@ -64,130 +60,60 @@ h3 {
     width: 25%;
     justify-content: end;
     background-color: white;
-  
 
-}
 
-.area {
-    /* max-width: 200px; */
-    height: 250px;
-    width: 450px;
-    padding: 12px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 50px;
-    color: rgb(62, 8, 8);
-    border: 5px dashed orange;
-    border-radius: 10px;
-    margin-top: 140px;
-}
+.david {
+    width: 50%;
 
-#user {
-    padding: 10px;
 }
 
 .form-control-lg {
     margin-top: 23px;
     padding: 14px;
-}
-
-.drop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
+    margin: 10px
 
 }
-
-.drop-zone:hover {
-    border-style: solid;
-}
-
-.drop-zone__input {
-    display: none;
-}
-
-.drop-zone__thumb {
-    width: 300px;
-    height: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: gray;
-    background-size: cover;
-    position: relative;
-    color: black;
-
-}
-
-.drop-zone__thumb::after {
-    content: attr(data-label);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 300px;
-    padding: 5px 0;
-    color: white;
-    background: black(0, 0, 0, 0.7);
-    font-size: 14px;
-    text-align: center;
-}
-
-.section {
-    margin-left: 50px;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    margin: 50px;
 
 }
 
 #btn {
-    width: 330px;
-    margin: 40px;
-    font-size: 40px;
-    background-color:  rgb(11, 83, 107);
-    ;
+    width: 400px;
+    margin: 5px;
+    font-size: 24px;
+    color: white;
+    background-color:  blue;
+    align-items: center
+
 
 }
 
-#design {
+.center {
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.input-design {
+    margin-top: 14px;
 }
 
-#card {
-    width: 36vw;
-    height: 36vh;
-    background-color: black;
-    border-radius: 8px;
-    display: none;
-    font-size: 34px;
-    margin: 45px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+
+.box {
+    margin: 70px;
+    height: 450px;
+    width: 800px;
+    background-color: wheat;
     border: 2px solid black;
-    overflow: auto;
-    resize: both;
- 
+    border-radius: 25px;
+    animation-timing-function: ease;
+    overflow: hidden;
+
 }
 
 hr {
     border-top: 6px solid gray;
-}
-#inputName {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 600;
-    font-size: 45px;
-    letter-spacing: 0.15em;
-    padding: 14px;
-}
-
-#logo {
-    width: 250px;
-    height: 250px;
 }
 
 .img {
@@ -195,21 +121,17 @@ hr {
     height: 30px;
 }
 
-#left {
+.left {
     padding: 12px;
     float: left;
     width: 33%;
     font-family: Verdana, Tahoma, sans-serif;
-
-   
 }
 
-
-#right {
+.right {
     padding: 12px;
     float: right;
-    width: 42%;
-
+    width: 44%;
 }
 
 .button {
@@ -229,17 +151,13 @@ hr {
     border-radius: 10px;
     margin-top: 30px;
     justify-content: center;
-
     }
-.button:hover {
-    background: #4CAF50;
-    color: white;
-}    
+
+}
 #userDesign {
     height: 200px;
     align-content: space-around;
     display: none;
-
 
 }
 
@@ -259,13 +177,6 @@ h4 {
     align-items: center;
     font-size: 40px;
 
-}
-
-#inputSentence {
-    justify-content: center;
-    background-color: yellow;
-    overflow: auto;
- 
 }
 
 #inputPhone {

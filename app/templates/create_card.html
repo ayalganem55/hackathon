@@ -1,37 +1,30 @@
 {% extends 'base.html' %}
 
 {% block my_block %}
-<div class="">
-    <form method="POST">
-        {{ form.hidden_tag() }}
 
-        {{ form.name.label }}
-        {{ form.name(size=32) }}
-        <br>
-        {{ form.category.label }}
-        {{ form.category(size=32) }}
-        <br>
-        {{ form.phone.label }}
-        {{ form.phone(size=32) }}
-        <br>
-         {{ form.email.label }}
-        {{ form.email(size=32) }}
-        <br>
-         {{ form.website.label }}
-        {{ form.website(size=32) }}
-        <br>
-         {{ form.facebook.label }}
-        {{ form.facebook(size=32) }}
-        <br>
-         {{ form.address.label }}
-        {{ form.address(size=32) }}
-        <br>
-        {{ form.sentence.label }}
-        {{ form.sentence(size=32) }}
-        <br>
-            {{ form.submit() }}
-      </form>
-</div>
+    <div class="center form-control-lg">
 
+           <form method="POST">
+            {{ form.hidden_tag() }}
+
+            {{ form.name(size=36, class="input-design", placeholder="name") }}
+            <br>
+            {{ form.category(size=36, class="input-design", placeholder="category") }}
+            <br>
+            {{ form.phone(size=36, class="input-design", placeholder="phone number") }}
+            <br>
+            {{ form.email(size=36, class="input-design", placeholder="email") }}
+            <br>
+            {{ form.website(size=36, class="input-design", placeholder="website") }}
+            <br>
+            {{ form.facebook(size=36, class="input-design", placeholder="facebook page") }}
+            <br>
+            {{ form.address(size=36, class="input-design", placeholder="address") }}
+            <br>
+            {{ form.sentence(size=36, class="input-design", placeholder="one killer sentence about") }}
+            <br>
+                {{ form.submit(id="btn") }}
+          </form>
+    </div>
 
 {% endblock %}

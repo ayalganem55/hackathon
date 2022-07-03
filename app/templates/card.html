@@ -2,21 +2,24 @@
 
 {% block my_block %}
 
-<h3> Here is your beautiful card: </h3>
+<h7> Hello {{ card.name }}, <br> welcome to prolo! <br><br>
+     Here is your beautiful card: </h7>
+
 
           <div class="box" >
              <div class="left">
-                <h2>  {{ card.name }} </h2><br>
+                <h2><b>{{ card.name.capitalize() }}</b></h2><br>
                 <hr class="hr">
-                <h2> {{ card.category }} </h2><br><br><br><br><br><br><br>
-                <h4> {{ card.sentence }} </h4>
+                <h2> {{ card.category }} </h2><br><br><br><br><br><br><br><br><br>
+                <p><b> {{ card.sentence }}</b></p>
              </div>
              <div class="right">
-                 <i class="fa-solid fa-link fa-1x">&nbsp; <p> {{ card.website }} </p><br><br></i>
-                 <i class="fa-solid fa-at fa-1x">&nbsp; <p> {{ card.email }} </p><br><br></i>
-                 <i class="fa-brands fa-facebook fa-1x">&nbsp; <p> {{ card.facebook }} </p><br><br></i>
-                 <i class="fa-solid fa-location-dot fa-1x"></i>&nbsp; <p> {{ card.address }} </p><br><br> </i>
-                 <i class="fa-solid fa-phone fa-1x"></i>&nbsp; <p> {{ card.phone }} </p></i>
+                 <p> <i class="fa-solid fa-at fa-1x"></i> &nbsp;{{ card.email }}<br><br></p>
+                 <p> <i class="fa-solid fa-phone fa-1x">&nbsp; </i> {{ card.phone }}</p><br><br>
+                 <p><a href="{{card.website}}"><i class="fa-solid fa-link fa-1x"></i>&nbsp; website<br><br></a></p>
+                 <p><a href="{{card.facebook}}"><i class="fa-brands fa-facebook fa-1x"></i>&nbsp; facebook page<br><br></a></p>
+                 <p><i class="fa-solid fa-location-dot fa-1x"></i>&nbsp; {{ card.address }}</p>
+
               </div>
 
 

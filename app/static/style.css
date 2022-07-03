@@ -38,12 +38,6 @@ li {
     margin: 0;
 }
 
-.text {
-    padding: 15px;
-    width: 75%;
-
-}
-
 h3 {
     text-align: center;
     margin-top: 250px;
@@ -56,23 +50,11 @@ h3 {
 
 }
 
-.col {
-    width: 25%;
-    justify-content: end;
-    background-color: white;
-
-
-.david {
-    width: 50%;
-
-}
-
 .form-control-lg {
     margin-top: 23px;
     padding: 14px;
     margin: 10px
-
-}
+    border-radius: 10px;
 
 }
 
@@ -95,8 +77,9 @@ h3 {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
 .input-design {
-    margin-top: 14px;
+    margin-top: 15px;
 }
 
 
@@ -113,18 +96,13 @@ h3 {
 }
 
 hr {
-    border-top: 6px solid gray;
-}
-
-.img {
-    width: 30px;
-    height: 30px;
+    border-top: 7px solid gray;
 }
 
 .left {
-    padding: 12px;
+    padding: 16px;
     float: left;
-    width: 33%;
+    width: 40%;
     font-family: Verdana, Tahoma, sans-serif;
 }
 
@@ -179,26 +157,24 @@ h4 {
 
 }
 
-#inputPhone {
-    margin-top: 10px;
+p {
+    font-size: 24px;
+     letter-spacing: 0.03em;
+}
+
+a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
 }
 
 
-#inputEmail {
-    margin-top: 10px;
-
-}
-
-#inputWebsite {
-    margin-top: 10px;
-
-}
-
-#inputFacebook {
-    margin-top: 10px;
-
-}
-
-#inputAdress {
-    margin-top: 10px;
+h7 {
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    color:  rgb(11, 83, 107);
+    font-size: 50px;
+    float: left;
+    letter-spacing: 0.02em;
+    font-weight: 560;
 }

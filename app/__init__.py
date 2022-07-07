@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "123"
+app.config['SECRET_KEY'] = "123" # please export to config file
 
 
 # Database Connection
